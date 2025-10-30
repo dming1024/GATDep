@@ -22,7 +22,7 @@ This repository provides:
 ##   Model Architecture
 
 <p align="center">
-  <img src="docs/GATModel.png" width="700">
+  <img src="src/GATModel.png" width="700">
 </p>
 
 GATDep models gene dependencies using:
@@ -72,7 +72,8 @@ Main dependencies:
 ### gene expression to GSVA scores
 
 ```bash
-Rscript geneExpression2GSVA.r example_expression.csv
+Rscript geneExpression2GSVA.R example_data/example_expression.csv
+#output: gsva_score_go_kegg.txt
 ```
 
 ### Predictions of gene essentialities
